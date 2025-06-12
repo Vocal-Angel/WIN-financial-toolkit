@@ -22,11 +22,33 @@ function calculateRetirement() {
     const inflation = parseFloat(document.getElementById("inflation").value) / 100;
     const returnRate = parseFloat(document.getElementById("returnRate").value) / 100;
 
-    const adjustedIncome = income * Math.pow(1 + inflation, retireAge - currentAge);
-    const totalRequired = adjustedIncome * ((1 - Math.pow(1 + returnRate, -retireYears)) / returnRate);
-    const yearsToSave = retireAge - currentAge;
-    const monthlySavings = totalRequired / ((Math.pow(1 + returnRate / 12, yearsToSave * 12) - 1) / (returnRate / 12));
+    const monthlyInflation = Math.pow(1 + inflation, retireAge - currentAge);
+    const adjustedMonthlyIncome = income * monthlyInflation;
 
-    document.getElementById("retirement-result").innerText =
-        `Target Lump Sum: £${totalRequired.toFixed(2)} | Monthly Savings Needed: £${monthlySavings.toFixed(2)}`;
+    const r = returnRate / 12;
+    const g = inflation / 12;
+    const n = retireYears * 12;
+
+    const factorNumerator = 1 - Math.pow((1 + g) / (1 + r), n);
+    const factorDenominator = r - g;
+
+    const presentValue = adjustedMonthlyIncome * (factorNumerator / factorDenominator);
+
+    const formattedIncome = adjustedMonthlyIncome.toLocaleString("en-UK", {
+        style: "currency",
+        currency: "GBP",
+        maximumFractionDigits: 0,
+    });
+
+    const formattedPV = presentValue.toLocaleString("en-UK", {
+        style: "currency",
+        currency: "GBP",
+        maximumFractionDigits: 0,
+    });
+
+    document.getElementById("retirement-result").innerHTML = `
+        <strong>Inflation-adjusted monthly income at age ${retireAge}:</strong> ${formattedIncome}<br>
+        <strong>Total retirement lump sum needed:</strong> ${formattedPV}
+    `;
 }
+
