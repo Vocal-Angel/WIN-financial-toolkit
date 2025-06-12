@@ -1,39 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WIN Retirement Planner</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdf6f0;
-      color: #2d2a32;
-      text-align: center;
-      padding: 60px;
-    }
-    h1 {
-      color: #4b1248;
-    }
-    p {
-      font-size: 1.2rem;
-      margin: 20px auto;
-      max-width: 600px;
-    }
-    a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #d4af37;
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>WIN Retirement Planner</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>WIN Retirement Planner</h1>
-  <p>A simple planning tool by the Women Identity Network to help you prepare for financial freedom, dignity, and clarity in retirement.</p>
-  <a class="button" href="#">Coming Soon</a>
+    <div class="tabs">
+        <button class="tab-button" onclick="showTab('wealth')">WealthWizard</button>
+        <button class="tab-button" onclick="showTab('retirement')">Retirement Planner</button>
+    </div>
+
+    <div id="wealth" class="tab-content">
+        <h2>WealthWizard Calculator</h2>
+        <label>Initial Amount: <input type="number" id="initial"></label>
+        <label>Monthly Contribution: <input type="number" id="monthly"></label>
+        <label>Annual Interest Rate (%): <input type="number" id="rate"></label>
+        <label>Years: <input type="number" id="years"></label>
+        <button onclick="calculateWealth()">Calculate</button>
+        <p id="wealth-result"></p>
+    </div>
+
+    <div id="retirement" class="tab-content" style="display:none;">
+        <h2>WIN Retirement Planner</h2>
+        <label>Current Age: <input type="number" id="currentAge"></label>
+        <label>Retirement Age Goal: <input type="number" id="retireAge"></label>
+        <label>Desired Monthly Income in Retirement: <input type="number" id="income"></label>
+        <label>Years in Retirement: <input type="number" id="retireYears"></label>
+        <label>Annual Inflation Rate (%): <input type="number" id="inflation"></label>
+        <label>Annual Investment Return (%): <input type="number" id="returnRate"></label>
+        <button onclick="calculateRetirement()">Calculate</button>
+        <p id="retirement-result"></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
