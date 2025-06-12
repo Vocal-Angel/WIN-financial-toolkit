@@ -39,5 +39,17 @@ button {
 }
 .tab-content {
     border-top: 2px solid #2D2A32;
+    
     padding-top: 20px;
+}
+.tooltip {
+  background-color: #fdf6f0;  /* Ivory White */
+  color: #4B1248;             /* Royal Plum */
+  padding: 12px 16px;
+  border-left: 4px solid #D4AF37;  /* Imperial Gold */
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
