@@ -1,6 +1,6 @@
 # WIN Financial Toolkit
 
-A dual-calculator financial tool designed **for the Women Identity Network (WIN) community** to support wealth clarity, financial direction, and retirement confidence for women 50+.
+A dual-calculator financial tool designed **for the Women Identity Network (WIN) community** to support wealth clarity, financial direction, and refirement confidence for women 50+.
 
 Created by **Barbara Angela Miller – Vocal Angel Ltd**  
 Guided by the principle: *"Fast is not foolish when it flows through wisdom."*
