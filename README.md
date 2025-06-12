@@ -1,37 +1,48 @@
+# WIN Financial Toolkit
 
-# WIN Retirement Planner
+A dual-calculator financial tool designed **for the Women Identity Network (WIN) community** to support wealth clarity, financial direction, and retirement confidence for women 50+.
 
-A financial tool developed by **Women Identity Network (WIN)** to help women 50+ plan for retirement with clarity and confidence.
+Created by **Barbara Angela Miller – Vocal Angel Ltd**  
+Guided by the principle: *"Fast is not foolish when it flows through wisdom."*
 
-## 🧮 What It Does
-This app calculates:
-- The inflation-adjusted monthly income you’ll need at retirement.
-- The total amount of savings required to fund that income over your retirement years.
+---
 
-## 📥 Inputs:
-- Current Age
-- Target Retirement Age
-- Desired Monthly Income
-- Retirement Duration (in years)
-- Annual Inflation Rate
-- Expected Annual Investment Return during retirement
+## 💡 What's Inside
 
-## 📤 Outputs:
-- Inflation-adjusted monthly income at retirement
-- Total savings needed by retirement
+This toolkit includes two strategic calculators:
 
-## 🌐 How to Use
-1. Clone or download this repo.
-2. Run the Flask app with:
+### 1. 🧮 WealthWizard  
+Grow your money faster with monthly compounding.  
+**Inputs:**  
+- Initial amount  
+- Monthly contribution  
+- Annual interest rate  
+- Years of saving  
 
-```bash
-python WIN_RetirementPlanner_App.py
-```
+### 2. 🎯 Retirement Planner  
+Estimate how much you’ll need for retirement—and what to save now.  
+**Inputs:**  
+- Current age  
+- Retirement age goal  
+- Desired retirement income  
+- Years in retirement  
+- Inflation rate  
+- Investment return
 
-3. Visit `http://localhost:5000` in your browser.
-4. Enter your data and receive instant results.
+---
 
-## 💜 About WIN
-WIN (Women Identity Network) is a sovereign community for women over 50. We build tools, truth, and technology to realign women with wisdom and help them refire, not retire.
+## 🚀 How to Use
 
-Developed by Barbara Angela Miller — Vocal Angel Ltd.
+- Visit: [win-retirement-planner.netlify.app](https://win-retirement-planner.netlify.app)  
+- Choose a tab, input your details, and click **Calculate**
+
+---
+
+## 🌸 About WIN  
+
+**WIN (Women Identity Network)** is a cooperative platform for women 50+ who are ready to reign with wisdom, build with intention, and leave legacy on purpose.
+
+We don’t just plan.  
+**We build. We own. We reign.**
+
+🔗 More from Vocal Angel: [github.com/Vocal-Angel](https://github.com/Vocal-Angel)
