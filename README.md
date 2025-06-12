@@ -33,7 +33,7 @@ Estimate how much you’ll need for retirement—and what to save now.
 
 ## 🚀 How to Use
 
-- Visit: [win-retirement-planner.netlify.app](https://win-retirement-planner.netlify.app)  
+- Visit:  [win-financial-toolkit.netlify.app](https://win-financial-toolkit.netlify.app) 
 - Choose a tab, input your details, and click **Calculate**
 
 ---
